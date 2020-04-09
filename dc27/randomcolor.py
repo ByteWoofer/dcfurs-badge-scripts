@@ -23,7 +23,12 @@ class randomcolor:
 		self.rows = list(range(0,7))
 		self.columns = []
 		for i in range(0,7):
-			self.columns.append(list(range(0,18)))
+			if(i==0):
+				self.columns.append(list(range(1,17)))
+			if(i==5):
+				self.columns.append(list(range(0,7)+range(11,18))
+			if(i==6):
+				self.columns.append(list(range(1,6)+range(12,17))
 	def draw(self):
 #		print(len(self.rows))
 		if(len(self.rows) != 0):
