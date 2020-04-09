@@ -1,0 +1,15 @@
+read file in
+iterate over pixels
+Bred = round(red/32)
+Bgreen = round(green/32)
+Bblue = round(blue/64)
+
+convert to binary: [Bred][Bgreen][Bblue]
+				   [7:5 ][4:2   ][1:0  ]
+convert binary to hex ascii
+append to list as ascii, writing a colon after every 18
+
+format in this json method:
+
+https://www.hackerearth.com/practice/notes/extracting-pixel-values-of-an-image-in-python/
+https://en.wikipedia.org/wiki/8-bit_color
