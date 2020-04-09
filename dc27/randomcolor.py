@@ -1,5 +1,5 @@
 ## Random Colors!
-#By Farkes(github.com/ByteWoofer/DC-fur-animations)
+#By Farkes(github.com/ByteWoofer/dcfurs-badge-scripts)
 ##
 
 import dcfurs
