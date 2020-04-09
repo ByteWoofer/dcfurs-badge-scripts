@@ -9,8 +9,9 @@ import random
 class randomcolor:
 	def __init__(self):
 		self.columns = []
+		self.intensity = 50
 		self.rows = []
-		self.interval = 50
+		self.interval = 20
 		self.hueLow=0
 		self.hueHigh=255
 		print("Initialized randoms!")
@@ -33,7 +34,7 @@ class randomcolor:
 			if(len(self.columns[row]) == 0):
 				self.rows.remove(row)
 			color = random.randint(self.hueLow,self.hueHigh)
-			dcfurs.set_pix_hue(col,row,color)
+			dcfurs.set_pix_hue(col,row,color,self.intensity)
 			
 		else:
 			self.reset()
