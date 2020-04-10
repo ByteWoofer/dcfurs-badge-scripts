@@ -13,3 +13,21 @@ format in this json method:
 
 https://www.hackerearth.com/practice/notes/extracting-pixel-values-of-an-image-in-python/
 https://en.wikipedia.org/wiki/8-bit_color
+
+
+
+------
+>>> def pers():
+...     count = 0
+...     try:
+...         while(1):
+...             count=count+1
+...     except:
+...         print(count)
+...         res = input("Cont?")
+...         if(res.rstrip() == 'y'):
+...             pers()
+... 
+>>> pers()
+
+It appears try/except can be (ab)used to allow interactive communication with the terminal on interupt, the only concern being the lack of cleanup before responding to the interupt and loss of ability to return afterwards.
