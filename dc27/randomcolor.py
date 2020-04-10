@@ -26,15 +26,18 @@ class randomcolor:
 			if(i==0):
 				self.columns.append(list(range(1,17)))
 			if(i==5):
-				self.columns.append(list(range(0,7)+range(11,18))
+				self.columns.append(list(range(0,7))+list(range(11,18)))
 			if(i==6):
-				self.columns.append(list(range(1,6)+range(12,17))
+				self.columns.append(list(range(1,6))+list(range(12,17)))
+			else:
+				self.columns.append(list(range(0,18)))
 	def draw(self):
 #		print(len(self.rows))
 		if(len(self.rows) != 0):
 			row = random.choice(self.rows)
+			# print(row,self.columns)
 			col = random.choice(self.columns[row])
-#			print(self.columns)
+			# print(row,col,self.columns)
 			self.columns[row].remove(col)
 			if(len(self.columns[row]) == 0):
 				self.rows.remove(row)
